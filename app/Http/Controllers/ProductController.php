@@ -23,6 +23,7 @@ class ProductController extends BaseController
         $validator = Validator::make( $product, [
             "name" => "required",
             "itemNumber" => "required",
+            "quantity" => "required",
             "price" => "required"
         ]);
 
@@ -53,6 +54,7 @@ class ProductController extends BaseController
         $validator = Validator::make( $input, [
             "name" => "required",
             "itemNumber" => "required",
+            "quantity" => "required",
             "price" => "required"
         ]);
 
