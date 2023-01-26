@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->string("itemNumber");
-            $table->integer("quantity");
+            $table->integer("quantity")->nullable();
             $table->double("price");
         });
     }
